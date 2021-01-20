@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchEvents = async () => {
       setLoading(true);
-      const res = await fetch("http://hotline.whalemuseum.org/api.json");
+      const res = await fetch("https://hotline.whalemuseum.org/api.json");
       const events = await res.json();
 
       setTimeout(() => {
